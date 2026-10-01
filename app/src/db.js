@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
-  throw new Error('MONGODB_URI is not set. Add it to your .env file.');
+  throw new Error('MONGODB_URI is not set. Add it to the .env file at the project root.');
 }
 
 const taskSchema = new mongoose.Schema(
